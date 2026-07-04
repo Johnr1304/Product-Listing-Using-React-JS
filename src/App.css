@@ -1,0 +1,143 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2563eb;
+  color: white;
+  padding: 16px;
+}
+
+/* Search bar */
+.search-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+/* Filter/Sort row */
+.filter-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-row select,
+.filter-row button {
+  flex: 1;
+  min-width: 120px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Product grid - responsive */
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+@media (min-width: 600px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Product card */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.product-card h3 {
+  margin: 0 0 4px 0;
+}
+
+.product-card .category {
+  font-size: 12px;
+  color: #777;
+}
+
+.product-card .description {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.product-card .price {
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.add-to-cart-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+/* Cart */
+.cart-box {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 16px;
+  margin-top: 24px;
+  background-color: white;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.remove-btn {
+  color: red;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.empty-text {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.page-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 16px;
+}
